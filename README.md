@@ -11,8 +11,8 @@ Data Zip File Location: [Data Set](https://d396qusza40orc.cloudfront.net/getdata
 ## Review Criteria
 Goal | Item | Link to Item
 --- | --- | ---
-Analysis R Script |  run_analysis.R |  [R Script Link](https://github.com/mk-ora/Getting-CleaningData/blob/main/run_analysis.R "run_analysis.R")
 Tidy Data Set |  Clean Data Set |  [Data Set Link](https://github.com/mk-ora/Getting-CleaningData/blob/main/Tidy%20data.txt "tidyData.txt")
 Github Repo | Repo |  [Repo Link](https://github.com/mk-ora/Getting-CleaningData.git "Click to go to Repo")
 Code book | CodeBook.md |  [Repo Link](https://github.com/mk-ora/Getting-CleaningData/blob/main/CodeBook.md "CodeBook.md")
 README | Guide |  [Repo Link](https://github.com/mk-ora/Getting-CleaningData/edit/main/README.md "README.md")
+Analysis R Script |  run_analysis.R |  [R Script Link](https://github.com/mk-ora/Getting-CleaningData/blob/main/run_analysis.R "run_analysis.R")
