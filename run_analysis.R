@@ -1,11 +1,6 @@
-# Getting and Cleaning Data Project John Hopkins Coursera
+# Getting and Cleaning Data Project
 
-# 1. Merges the training and the test sets to create one data set.
-# 2. Extracts only the measurements on the mean and standard deviation for each measurement.
-# 3. Uses descriptive activity names to name the activities in the data set
-# 4. Appropriately labels the data set with descriptive variable names.
-# 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-
+# Extracts only the measurements on the mean and standard deviation for each measurement
 # Load Packages and get the Data
 packages <- c("data.table", "reshape2")
 sapply(packages, require, character.only=TRUE, quietly=TRUE)
@@ -41,10 +36,11 @@ testSubjects <- fread(file.path(path, "UCI HAR Dataset/test/subject_test.txt")
                       , col.names = c("SubjectNum"))
 test <- cbind(testSubjects, testActivities, test)
 
+#Merges the training and the test sets to create one data set.
 # merge datasets
 combined <- rbind(train, test)
 
-# Convert classLabels to activityName basically. More explicit. 
+# Convert classLabels to activityName 
 combined[["Activity"]] <- factor(combined[, Activity]
                               , levels = activityLabels[["classLabels"]]
                               , labels = activityLabels[["activityName"]])
